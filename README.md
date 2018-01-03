@@ -1,7 +1,44 @@
 # local-icons
-## Features
+
+Put any icon in your HTML web page in a sooo easy way!
+
 - **Copy/paste** the icon CSS class into your stylesheet in order to have the icon shown in your HTML.
 - No need to import external css files, only use the provided CSS class and enjoy.
+
+## Example
+
+HTML code:
+
+```html
+<i class="android-icon"></i>
+```
+
+CSS class:
+```css
+.android-icon {
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+	background-image: url(
+		data:image/svg+xml;base64,PD9....<rest_of_the_base64_string>);
+}
+```
+
+would output the icon:
+
+![Android icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/android/android-40.svg?sanitize=true)
+
+> The whole base64 string of the android icon is located [here](https://raw.githubusercontent.com/Dellos7/local-icons/master/android/android.base64)
+
+## The icons
+
+> This repo has been created recently, I'm trying to upload the icons as fast as I can.
+
+Below I will be listing all the icons that we've got currently available. Just **copy/pase** the CSS located at the **CSS code** colum in your CSS stylesheet and create an HTML element (usually you will be using `<i></i>`) with the CSS class name of the **CSS class name** column.
+
+> You can modify the **width** and **height** of the icon modifying those properties in the CSS code; default they are `width: 30px` and `height: 30px`.
 
 ## Social media icons list
 
