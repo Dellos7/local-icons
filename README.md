@@ -54,7 +54,7 @@ Below I will be listing all the icons that we've got currently available. Just *
 
 | Icon    | CSS class name | CSS code | Preview |
 |---------|----------------|----------|----------|
-| arrow right | `arrow-right-icon`      |    [arrow-right](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Arrow right icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/arrow-right/arrow-right-40.png?sanitize=true) |
+| arrow right | `arrow-right-icon`      |    [arrow-right](https://github.com/Dellos7/local-icons/blob/master/arrow-right/arrow-right.css)      | ![Arrow right icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/arrow-right/arrow-right-40.png?sanitize=true) |
 
 ## Credits
 
