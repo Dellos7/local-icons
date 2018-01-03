@@ -3,15 +3,25 @@
 - **Copy/paste** the icon CSS class into your stylesheet in order to have the icon shown in your HTML.
 - No need to import external css files, only use the provided CSS class and enjoy.
 
-## Icons list
+## Social media icons list
+
+**Source**: [neilorangepeel/Free-Social-Icons](https://github.com/neilorangepeel/Free-Social-Icons)
 
 | Icon    | CSS class name | CSS code | Preview |
 |---------|----------------|----------|----------|
-| android | `android-svg-icon`      |    [android](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Android icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/android/android.svg?sanitize=true) |
-| arrow right | `arrow-right-svg-icon`      |    [arrow-right](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Arrow right icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/arrow-right/arrow-right.png?sanitize=true) |
-## Credis
+| android | `android-icon`      |    [android](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Android icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/android/android.svg?sanitize=true) |
 
-- Idea from
-- Downloaded some icons from
-    - Fontawesome
-    - ...
+## Fontawesome icons list
+
+**Source**: [encharm/Font-Awesome-SVG-PNG](https://github.com/encharm/Font-Awesome-SVG-PNG)
+
+| Icon    | CSS class name | CSS code | Preview |
+|---------|----------------|----------|----------|
+| arrow right | `arrow-right-icon`      |    [arrow-right](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Arrow right icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/arrow-right/arrow-right-60.png?sanitize=true) |
+
+## Credits
+
+- I got the idea of creating this repo reading [this wiki](https://github.com/barryclark/jekyll-now/wiki/Adding-Icons) from [barryclark/jekyll-now](https://github.com/barryclark/jekyll-now).
+- All the credits should go to them who have made available the icons for us:
+    - [neilorangepeel/Free-Social-Icons](https://github.com/neilorangepeel/Free-Social-Icons). Great social-media SVG icons!
+    - [encharm/Font-Awesome-SVG-PNG](https://github.com/encharm/Font-Awesome-SVG-PNG), allowing to download PNG & SVG icons of [fontawesome.io/icons](http://fontawesome.io/icons/)
