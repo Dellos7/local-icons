@@ -2,6 +2,8 @@
 
 Put any icon in your HTML web page in a sooo easy way!
 
+The aim of this repo is help people to easily put icons in their web pages without having to do too much work. I also want to make this repo a collection of icons where people can find them easily and just copy/paste to use them.
+
 - **Copy/paste** the icon CSS class into your stylesheet in order to have the icon shown in your HTML.
 - No need to import external css files, only use the provided CSS class and enjoy.
 
