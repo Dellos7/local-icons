@@ -9,7 +9,7 @@
 
 | Icon    | CSS class name | CSS code | Preview |
 |---------|----------------|----------|----------|
-| android | `android-icon`      |    [android](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Android icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/android/android.svg?sanitize=true) |
+| android | `android-icon`      |    [android](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Android icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/android/android-40.svg?sanitize=true) |
 
 ## Fontawesome icons list
 
@@ -17,7 +17,7 @@
 
 | Icon    | CSS class name | CSS code | Preview |
 |---------|----------------|----------|----------|
-| arrow right | `arrow-right-icon`      |    [arrow-right](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Arrow right icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/arrow-right/arrow-right-60.png?sanitize=true) |
+| arrow right | `arrow-right-icon`      |    [arrow-right](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Arrow right icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/arrow-right/arrow-right-40.png?sanitize=true) |
 
 ## Credits
 
