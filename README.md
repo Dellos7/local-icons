@@ -9,7 +9,7 @@
 |---------|----------------|----------|----------|
 | android | `android-svg-icon`      |    [android](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Android icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/android/android.svg?sanitize=true) |
 | arrow right | `arrow-right-svg-icon`      |    [arrow-right](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Arrow right icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/arrow-right/arrow-right.png?sanitize=true) |
-
+| arrow right | `arrow-right-svg-icon`      |    [arrow-right](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Arrow right icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/arrow-right.png?sanitize=true) |
 ## Credis
 
 - Idea from
