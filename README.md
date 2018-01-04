@@ -49,7 +49,7 @@ Below I will be listing all the icons that we've got currently available. Just *
 | Icon    | CSS class name | CSS code | Preview  |Format     |
 |---------|----------------|----------|----------|-----------|
 | android | `android-icon`      |    [android](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Android icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/android/android-40.svg?sanitize=true) | SVG |
-| apple | `apple-icon`      |    [apple](https://github.com/Dellos7/local-icons/blob/master/apple/apple.css)      | ![Apple icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/apple/applpe-40.svg?sanitize=true) | SVG |
+| apple | `apple-icon`      |    [apple](https://github.com/Dellos7/local-icons/blob/master/apple/apple.css)      | ![Apple icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/apple/apple-40.svg?sanitize=true) | SVG |
 
 ## Fontawesome icons list
 
