@@ -58,6 +58,7 @@ Below I will be listing all the icons that we've got currently available. Just *
 | Icon    | CSS class name | CSS code | Preview  | Format    |
 |---------|----------------|----------|----------|-----------|
 | arrow right | `arrow-right-icon`      |    [arrow-right](https://github.com/Dellos7/local-icons/blob/master/arrow-right/arrow-right.css)      | ![Arrow right icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/arrow-right/arrow-right-40.png?sanitize=true) | PNG |
+| beer | `beer-icon` | [beer](https://github.com/Dellos7/local-icons/blob/master/beer/beer.css) | ![beer icon](https://github.com/Dellos7/local-icons/blob/master/beer/beer-40.png?sanitize=true) | PNG |
 
 ## Roadmap
 
