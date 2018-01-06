@@ -53,7 +53,9 @@ Below I will be listing all the icons that we've got currently available. Just *
 
 ## Fontawesome icons list
 
-**Source**: [encharm/Font-Awesome-SVG-PNG](https://github.com/encharm/Font-Awesome-SVG-PNG)
+**Source**: [encharm/Font-Awesome-SVG-PNG](https://github.com/encharm/Font-Awesome-SVG-PNG).
+
+> **Note**: the icons may seem in bad resolution, however the preview it's only a bad-resolution copy of the original icon in order to be shown here.
 
 | Icon    | CSS class name | CSS code | Preview  | Format    |
 |---------|----------------|----------|----------|-----------|
@@ -83,3 +85,10 @@ github-square | `github-square-icon` | [github-square](https://github.com/Dellos
 - All the credits should go to them who have made available the icons for us:
     - [neilorangepeel/Free-Social-Icons](https://github.com/neilorangepeel/Free-Social-Icons). Great social-media SVG icons!
     - [encharm/Font-Awesome-SVG-PNG](https://github.com/encharm/Font-Awesome-SVG-PNG), allowing to download PNG & SVG icons of [fontawesome.io/icons](http://fontawesome.io/icons/)
+
+## License
+
+- This repo's License: [GPL 3.0 License](https://choosealicense.com/licenses/gpl-3.0/)
+- [neilorangepeel/Free-Social-Icons](https://github.com/neilorangepeel/Free-Social-Icons) : [GPL 3.0 License](https://choosealicense.com/licenses/gpl-3.0/)
+- [encharm/Font-Awesome-SVG-PNG](https://github.com/encharm/Font-Awesome-SVG-PNG) : [MIT License](https://choosealicense.com/licenses/mit/)
+- [fontawesome.io/icons](http://fontawesome.io/icons/) : [SIL OFL 1.1 License](http://scripts.sil.org/OFL)
