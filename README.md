@@ -59,6 +59,13 @@ Below I will be listing all the icons that we've got currently available. Just *
 |---------|----------------|----------|----------|-----------|
 | arrow right | `arrow-right-icon`      |    [arrow-right](https://github.com/Dellos7/local-icons/blob/master/arrow-right/arrow-right.css)      | ![Arrow right icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/arrow-right/arrow-right-40.png?sanitize=true) | PNG |
 | beer | `beer-icon` | [beer](https://github.com/Dellos7/local-icons/blob/master/beer/beer.css) | ![beer icon](https://github.com/Dellos7/local-icons/blob/master/beer/beer-40.png?sanitize=true) | PNG |
+| address-book | `address-book-icon` | [address-book](https://github.com/Dellos7/local-icons/blob/master/address-book/address-book.css) | ![address-book icon](https://github.com/Dellos7/local-icons/blob/master/address-book/address-book-40.png?sanitize=true) | PNG |
+ address-book-o | `address-book-o-icon` | [address-book-o](https://github.com/Dellos7/local-icons/blob/master/address-book-o/address-book-o.css) | ![address-book-o icon](https://github.com/Dellos7/local-icons/blob/master/address-book-o/address-book-o-40.png?sanitize=true) | PNG 
+git | `git-icon` | [git](https://github.com/Dellos7/local-icons/blob/master/git/git.css) | ![git icon](https://github.com/Dellos7/local-icons/blob/master/git/git-40.png?sanitize=true) | PNG |
+ git-square | `git-square-icon` | [git-square](https://github.com/Dellos7/local-icons/blob/master/git-square/git-square.css) | ![git-square icon](https://github.com/Dellos7/local-icons/blob/master/git-square/git-square-40.png?sanitize=true) | PNG |
+| github | `github-icon` | [github](https://github.com/Dellos7/local-icons/blob/master/github/github.css) | ![github icon](https://github.com/Dellos7/local-icons/blob/master/github/github-40.png?sanitize=true) | PNG |
+github-square | `github-square-icon` | [github-square](https://github.com/Dellos7/local-icons/blob/master/github-square/github-square.css) | ![github-square icon](https://github.com/Dellos7/local-icons/blob/master/github-square/github-square-40.png?sanitize=true) | PNG |
+ github-alt | `github-alt-icon` | [github-alt](https://github.com/Dellos7/local-icons/blob/master/github-alt/github-alt.css) | ![github-alt icon](https://github.com/Dellos7/local-icons/blob/master/github-alt/github-alt-40.png?sanitize=true) | PNG |
 
 ## Roadmap
 
