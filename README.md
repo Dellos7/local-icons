@@ -9,17 +9,17 @@ The aim of this repo is help people to easily put icons in their web pages witho
 - **Copy/paste** the icon CSS class into your stylesheet in order to have the icon shown in your HTML.
 - No need to import external css files, only use the provided CSS class and enjoy.
 
-## Example
+## Example SVG:
 
 HTML code:
 
 ```html
-<i class="android-icon"></i>
+<i class="android-svg-icon"></i>
 ```
 
 CSS class:
 ```css
-.android-icon {
+.android-svg-icon {
 	width: 30px;
 	height: 30px;
 	background-size: cover;
@@ -32,9 +32,36 @@ CSS class:
 
 would output the icon:
 
-![Android icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/android/android-40.svg?sanitize=true)
+<img src="icons/android-svg/android-svg.svg" width="30">
 
-> The whole base64 string of the android icon is located [here](https://raw.githubusercontent.com/Dellos7/local-icons/master/android/android.base64)
+> The whole base64 string of the android icon is located [here](https://raw.githubusercontent.com/Dellos7/local-icons/master/icons/android-svg/android-svg.base64)
+
+## Example PNG:
+
+HTML code:
+
+```html
+<i class="apple-icon"></i>
+```
+
+CSS class:
+```css
+.apple-icon {
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+	background-image: url(
+		data:image/svg+xml;base64,iVB....<rest_of_the_base64_string>);
+}
+```
+
+would output the icon:
+
+<img src="icons/apple/apple.png" width="30">
+
+> The whole base64 string of the apple icon is located [here](https://raw.githubusercontent.com/Dellos7/local-icons/master/icons/apple/apple.base64)
 
 ## Create your own icon
 
@@ -88,8 +115,8 @@ Below I will be listing all the icons that we've got currently available. Just *
 
 | Icon    | CSS class name | CSS code | Preview  |Format     |
 |---------|----------------|----------|----------|-----------|
-| android | `android-icon`      |    [android](https://github.com/Dellos7/local-icons/blob/master/android/android.css)      | ![Android icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/android/android-40.svg?sanitize=true) | SVG |
-| apple | `apple-icon`      |    [apple](https://github.com/Dellos7/local-icons/blob/master/apple/apple.css)      | ![Apple icon](https://raw.githubusercontent.com/Dellos7/local-icons/master/apple/apple-40.svg?sanitize=true) | SVG |
+| android | `android-svg-icon`      |    [android svg](https://github.com/Dellos7/local-icons/blob/master/android-svg/android-svg.css)      | <img src="icons/android-svg/android-svg.svg" width="30"> | SVG |
+| apple | `apple-svg-icon`      |    [apple svg](https://github.com/Dellos7/local-icons/blob/master/apple-svg/apple-svg.css)      | <img src="icons/apple-svg/apple-svg.svg" width="30"> | SVG |
 
 ## Fontawesome icons list
 
