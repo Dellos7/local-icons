@@ -109,6 +109,11 @@ Below I will be listing all the icons that we've got currently available. Just *
 
 > You can modify the **width** and **height** of the icon modifying those properties in the CSS code; default they are `width: 30px` and `height: 30px`.
 
+Lists:
+
+- [Social media icons list](#social-media-icons-list)
+- [Fontawesome black icons list](#fontawesome-black-icons-list)
+
 ## Social media icons list
 
 **Source**: [neilorangepeel/Free-Social-Icons](https://github.com/neilorangepeel/Free-Social-Icons)
@@ -118,7 +123,7 @@ Below I will be listing all the icons that we've got currently available. Just *
 | android | `android-svg-icon`      |    [android svg](https://github.com/Dellos7/local-icons/blob/master/icons/android-svg/android-svg.css)      | <img src="icons/android-svg/android-svg.svg" width="30"> | SVG |
 | apple | `apple-svg-icon`      |    [apple svg](https://github.com/Dellos7/local-icons/blob/master/icons/apple-svg/apple-svg.css)      | <img src="icons/apple-svg/apple-svg.svg" width="30"> | SVG |
 
-## [Fontawesome black icons list](icons-lists/fontawesome-black.md)
+## Fontawesome black icons list
 
 **Source**: [encharm/Font-Awesome-SVG-PNG](https://github.com/encharm/Font-Awesome-SVG-PNG).
 
