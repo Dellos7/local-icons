@@ -1,6 +1,6 @@
 # local-icons
 
-> This repo has been created recently, I'm trying to upload the icons as fast as I can.
+> This repo has been created recently, I'm trying to upload the icons as fast as I can. Check out the [roadmap](#roadmap).
 
 Put any icon in your HTML web page in a sooo easy way!
 
@@ -81,12 +81,12 @@ Put your icon(s) in the folder **faw-icons-png** and do the following:
 
 ## Roadmap
 
-- Upload all the icons from [encharm/Font-Awesome-SVG-PNG](https://github.com/encharm/Font-Awesome-SVG-PNG)
+- Upload all the icons from [encharm/Font-Awesome-SVG-PNG](https://github.com/encharm/Font-Awesome-SVG-PNG). Black (:white_check_mark:) & white.
 - Upload all the icons from [neilorangepeel/Free-Social-Icons](https://github.com/neilorangepeel/Free-Social-Icons)
 - Create an automated script to pick a PNG or SVG image and create all the files and CSS code in order to be ready to upload to this repo.
-- Create a "How to create your own icon" section.
+- Create a "Create your own icon" section.
 - Create a "Contribution guidelines" section.
-- Create a PNG image icon example.
+- Create a PNG image icon example. :white_check_mark:
 - Improve the `example.html` file.
 
 ## Credits
@@ -102,6 +102,11 @@ Put your icon(s) in the folder **faw-icons-png** and do the following:
 - [neilorangepeel/Free-Social-Icons](https://github.com/neilorangepeel/Free-Social-Icons) : [GPL 3.0 License](https://choosealicense.com/licenses/gpl-3.0/)
 - [encharm/Font-Awesome-SVG-PNG](https://github.com/encharm/Font-Awesome-SVG-PNG) : [MIT License](https://choosealicense.com/licenses/mit/)
 - [fontawesome.io/icons](http://fontawesome.io/icons/) : [SIL OFL 1.1 License](http://scripts.sil.org/OFL)
+
+# Related/Similar projects
+
+Here you can find similar projects that may interest yout when working with icons:
+- [ladjs/font-awesome-assets](https://github.com/ladjs/font-awesome-assets). `npm` package that allows you to create `svg` and `img` HTML tags of the **fontawesome icons** and apply customizations in the color and opacity of the icon. Examples: <img src="https://cdn.rawgit.com/crocodilejs/font-awesome-assets/master/media/rainbow/amazon.svg" width="16" height="16" title="amazon" alt="amazon" /> <img src="https://cdn.rawgit.com/crocodilejs/font-awesome-assets/master/media/rainbow/instagram.svg" width="16" height="16" title="instagram" alt="instagram" /> <img src="https://cdn.rawgit.com/crocodilejs/font-awesome-assets/master/media/rainbow/taxi.svg" width="16" height="16" title="taxi" alt="taxi" /> <img src="https://cdn.rawgit.com/crocodilejs/font-awesome-assets/master/media/rainbow/whatsapp.svg" width="16" height="16" title="whatsapp" alt="whatsapp" />
 
 ## The icons
 
