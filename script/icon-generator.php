@@ -3,35 +3,29 @@
 
 define( 'CSS_WIDTH', '30' );
 define( 'CSS_HEIGHT', '30' );
-define( 'README_SIZE', '40' );
+define( 'README_SIZE', '30' );
 define( 'GITHUB_BASE_FILE_LINK', 'https://github.com/Dellos7/local-icons/blob/master' );
-define( 'GITHUB_BASE_RAW_FILE_LINK', 'https://raw.githubusercontent.com/Dellos7/local-icons/master' );
+//define( 'GITHUB_BASE_RAW_FILE_LINK', 'https://raw.githubusercontent.com/Dellos7/local-icons/master' );
+define ('ICONS_FOLDER', 'icons');
+define( 'OUTPUT_TABLE_RADME_FILENAME', 'icons-table-readme.md' );
 
 $arguments = retrieveArguments();
-$file = $arguments['file'];
-$fileFormat = $arguments['format'];
-checkFileFormat($fileFormat);
-$base64 = getBase64( $file );
-$fileInfo = getFileInfo( $file );
-$name = $fileInfo['filename'];
-$nameWithExt = $fileInfo['basename'];
-createIconFolder($name);
-copyImageToFolder($file, $name, $nameWithExt);
-createBase64File($name, $base64);
-createCssFile($name, $base64, $fileFormat);
-myImageResize( $file, $name, $fileFormat );
-echoReadmeRow( $name, $fileFormat );
+iconGenerator( $arguments );
 
 function retrieveArguments() {
     $shortopts  = "";
     $shortopts .= "f:";  // File
     $shortopts .= "t:";  // Format
+    $shortopts .= "d:";  // Folder
+    $shortopts .= "o:";  // Output folder
     /*$shortopts .= "v::"; // Valor opcional
     $shortopts .= "abc"; // Estas opciones no aceptan valores*/
     
     $longopts  = array(
         "file:",     // Valor obligatorio
-        "format",
+        "format:",
+        "folder::",
+        "output-folder::"
         /*"optional::",    // Valor opcional
         "option",        // Sin valores
         "opt",           // Sin valores*/
@@ -39,21 +33,73 @@ function retrieveArguments() {
     $options = getopt($shortopts, $longopts);
 
     $dieMessage = null;
-    if( !$options || !$options['f'] ) {
-        $dieMessage = 'Required argument: -f or --file';
+    if( !$options ) {
+        $dieMessage = 'Valid arguments: -f (--file), -t (--format), -d (--folder)';
     }
-    if( !$options || !$options['t'] ) {
-        $dieMessage = 'Required argument: -t or --format';
+    if( !$options['d'] ) {
+        if( !$options['f'] ) {
+            $dieMessage = 'Required argument: -f or --file';
+        }
+        if( !$options['t'] ) {
+            $dieMessage = 'Required argument: -t or --format';
+        }
+        if( $dieMessage ) {
+            die( $dieMessage . "\n" );
+        }
+        $res = array(
+            'file' => $options['f'],
+            'format' => $options['t']
+        );
+    }
+    else {
+        if( !$options['t'] ) {
+            $dieMessage = 'Required argument: -t or --format';
+        }
+        if( $dieMessage ) {
+            die( $dieMessage . "\n" );
+        }
+        $res = array(
+            'folder' => ".",
+            'format' => $options['t']
+        );
     }
 
-    if( $dieMessage ) {
-        die( $dieMessage . "\n" );
-    }
+    return $res;
+}
 
-    return array(
-        'file' => $options['f'],
-        'format' => $options['t']
-    );
+function iconGenerator( $arguments ) {
+    if( $arguments['folder'] ) {
+        $folder = $arguments['folder'];
+        $filesFormat = $arguments['format'];
+        $files = readFolder( $folder );
+        generateIcons( $files, $filesFormat );
+    }
+    else {
+        $file = $arguments['file'];
+        $fileFormat = $arguments['format'];
+        generateIcon( $file, $fileFormat, false );
+    }
+}
+
+function generateIcons( $files, $filesFormat ) {
+    unlink(OUTPUT_TABLE_RADME_FILENAME);
+    foreach( $files as $file ) {
+        generateIcon( $file, $filesFormat , true );
+    }
+}
+
+function generateIcon( $file, $fileFormat, $isFolder ) {
+    checkFileFormat($fileFormat);
+    $base64 = getBase64( $file );
+    $fileInfo = getFileInfo( $file );
+    $name = $fileInfo['filename'];
+    $nameWithExt = $fileInfo['basename'];
+    createIconFolder($name);
+    copyImageToFolder($file, $name, $nameWithExt);
+    createBase64File($name, $base64);
+    createCssFile($name, $base64, $fileFormat);
+    //myImageResize( $file, $name, $fileFormat );
+    echoReadmeRow( $name, $fileFormat, $isFolder );
 }
 
 function checkFileFormat($fileFormat) {
@@ -75,7 +121,7 @@ function getFileInfo( $file ) {
 
 function createIconFolder( $name ) {
     if (!file_exists( $name )) {
-        mkdir($name, 0775, true);
+        mkdir( $name, 0775, true);
     }
 }
 
@@ -86,7 +132,7 @@ function copyImageToFolder( $file, $name, $nameWithExt ) {
 }
 
 function createBase64File( $name, $base64 ) {
-    file_put_contents($name . '/' . $name . '.base64', $base64);
+    file_put_contents(  $name . '/' . $name . '.base64', $base64);
 }
 
 function createCssFile( $name, $base64, $format ) {
@@ -118,14 +164,36 @@ function myImageResize( $file, $name, $fileFormat ) {
     }
 }
 
-function echoReadmeRow( $name, $fileFormat ) {
+function echoReadmeRow( $name, $fileFormat, $isFolder ) {
+    $readmeSize = README_SIZE;
     $format = strtoupper( $fileFormat );
+    $formatLower = strtolower( $fileFormat );
     $gitHubBaseFileLink = GITHUB_BASE_FILE_LINK;
-    $gitHubBaseRawFileLunk = GITHUB_BASE_RAW_FILE_LINK;
+    $iconsFolder = ICONS_FOLDER;
+
     $row = <<<EOF
-    | ${name} | `${name}-icon` | [${name}](${gitHubBaseFileLink}/${name}/${name}.css) | ![${name} icon](${gitHubBaseFileLink}/${name}/${name}-40.png?sanitize=true) | ${format} |
+    | ${name} | `${name}-icon` | [${name}](${gitHubBaseFileLink}/${iconsFolder}/${name}/${name}.css) | <img src="${iconsFolder}/${name}/${name}.${formatLower}" width="${readmeSize}"> | ${format} |
 EOF;
-    echo $row . "\n";
+    if( $isFolder ) {
+        file_put_contents( OUTPUT_TABLE_RADME_FILENAME, $row . "\n", FILE_APPEND);
+    }
+    else {
+        echo $row . "\n";
+    }
+}
+
+function readFolder( $folderName ) {
+    $files = scandir( $folderName );
+    /*foreach( $files as $i=>$file ) {
+        $files[$i] = $folderName . '/' . $file;
+    }*/
+    $keyThis = array_search('.', $files);
+    $keyParent = array_search('..', $files);
+    $keyDsstore = array_search('.DS_Store', $files);
+    unset($files[$keyThis]);
+    unset($files[$keyParent]);
+    unset($files[$keyDsstore]);
+    return $files;
 }
 
 function image_resize($src, $dst, $width, $height, $crop=0){
