@@ -96,6 +96,10 @@ would output the icon:
 	background-image: <copied_stuff>
 }
 ```
+6. Use it!
+```html
+<i class="my-awesome-icon"></i>
+```
 
 **Using the script**
 > Allows creating the CSS classes in an automatic way for multiple icons.
